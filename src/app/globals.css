@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+.btn-border {
+  @apply rounded-3xl bg-gradient-to-r from-[#0080FF]  to-[#63F17B] py-2 px-[2px] font-medium text-[#1F1F1F];
+}
+.btn-border {
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.btn {
+  color: #ffffff;
+  border-radius: 24px;
+  background: var(
+    --Gradient,
+    linear-gradient(90deg, #0080ff -6.6%, #63f17b 149.98%)
+  );
+
+  font-weight: 500;
+}
