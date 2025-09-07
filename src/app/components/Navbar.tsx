@@ -18,9 +18,9 @@ export default function Navbar() {
   const featureRef = useRef<HTMLDivElement>(null);
   const featureRefs = useRef<HTMLDivElement>(null);
   const navItems = [
-    { label: "About Us", path: "/about" },
+    { label: "About", path: "/about" },
     { label: "Pricing", path: "/pricing" },
-    { label: "Contact Us", path: "/contact" },
+    { label: "Contact", path: "/contact" },
     // { label: "Blog", path: "/blog" },
   ];
   const featureItems = [
@@ -57,8 +57,7 @@ export default function Navbar() {
     },
     {
       title: "Connect & Communicate",
-      subtitle:
-        "Secure communication to keep caregivers and families informedn",
+      subtitle: "Secure communication to keep caregivers and families informed",
       icon: "/icon1.svg",
       path: "/features/connect&communicate",
     },
@@ -116,7 +115,7 @@ export default function Navbar() {
   return (
     <nav
       ref={featureRefs}
-      className={`relative w-full pt-12 px-4 md:px-10 md:py-4  flex items-center justify-between z-50 md:fixed transition-colors duration-300 ${
+      className={`relative w-full pt-12 px-4 md:px-10 md:py-4  flex  items-center justify-between  z-50 md:fixed transition-colors duration-300 ${
         scrolled
           ? "border-b border-[#FAFAFA] bg-white/50 backdrop-blur-md"
           : "bg-white"
@@ -126,29 +125,32 @@ export default function Navbar() {
         <div className="bg-white w-full h-[100px] mx-[-40px] hidden md:block">
           <div className="flex items-center justify-between font-bold">
             <div className="w-2/6"></div>
-            <div>
+            <div className="pt-6 ms-5">
               <p className="text-[#141414] text-xl font-bold"> Micro </p>
               <p className="block text-[#757575] text-base">Free</p>
             </div>
-            <div>
-              <p className="text-[#141414] text-xl">Standard </p>
+            <div className="pt-6">
+              <p className="text-[#141414] text-xl text-center">Standard </p>
               <p className="block text-[#757575] text-base">
                 {" "}
                 $7 / User / Month
               </p>
             </div>
             <div>
-              <p className="rounded-[16px] bg-[#EDFAFF] mix-blend-multiply py-1 px-3 text-sm w-[98px] font-medium block">
-                Basic plan
+              <p className="rounded-[16px] bg-[#EDFAFF] mix-blend-multiply py-1 px-3 text-center text-sm w-[130px] font-medium block">
+                Most Popular
               </p>
-              <p className="text-[#141414] text-xl">Standard</p>
+              <p className="text-[#141414] text-xl text-center">Growth</p>
               <p className="block text-[#757575] text-base">
                 {" "}
                 $12 / User / Month
               </p>
             </div>
-            <div>
-              <p className="text-[#141414] text-xl"> Professional</p>
+            <div className="pt-6">
+              <p className="text-[#141414] text-xl text-center">
+                {" "}
+                Professional
+              </p>
               <p className="block text-[#757575] text-base">
                 {" "}
                 $18 / User / Month
@@ -159,7 +161,7 @@ export default function Navbar() {
       ) : (
         <>
           {/* Left: Logo */}
-          <Link href="/home" className="flex items-center gap-4 z-10">
+          <Link href="/home" className="flex items-center gap-4 z-10 w-1/6">
             <Image src="/logo.svg" height="40" width="93" alt="logo" />
           </Link>
           {/* Toggle button for mobile */}
@@ -184,7 +186,7 @@ export default function Navbar() {
                     href="/home"
                     className={`mt-10 hover:text-[#0063C6] transition-colors duration-200 ${
                       currentPath === "/home"
-                        ? "text-[#0063C6] font-semibold underline decoration-1"
+                        ? "text-[#0063C6] font-semibold"
                         : ""
                     }`}
                   >
@@ -196,8 +198,7 @@ export default function Navbar() {
                   <Link
                     href="/features"
                     className={`flex items-center gap-1 hover:text-[#0063C6] transition-colors duration-200 ${
-                      isActive &&
-                      "text-[#0063C6] font-semibold underline decoration-1"
+                      isActive && "text-[#0063C6] font-semibold"
                     }`}
                     onClick={() => {
                       if (window.innerWidth < 768) toggleSubmenu();
@@ -247,8 +248,7 @@ export default function Navbar() {
                       <Link
                         href={item.path}
                         className={`hover:text-[#0063C6] transition-colors duration-200 ${
-                          isActive &&
-                          "text-[#0063C6] font-semibold underline decoration-1"
+                          isActive && "text-[#0063C6] font-semibold"
                         }`}
                       >
                         {item.label}
@@ -277,7 +277,7 @@ export default function Navbar() {
                   href="/home"
                   className={`hover:text-[#0063C6] transition-colors duration-200 ${
                     currentPath === "/home"
-                      ? "text-[#0063C6] font-semibold underline decoration-1"
+                      ? "text-[#0063C6] font-semibold"
                       : ""
                   }`}
                 >
@@ -294,8 +294,7 @@ export default function Navbar() {
                   <Link
                     href="/features"
                     className={`flex items-center gap-1 hover:text-[#0063C6] transition-colors duration-200 ${
-                      isActive &&
-                      "text-[#0063C6] font-semibold underline decoration-1"
+                      isActive && "text-[#0063C6] font-semibold"
                     }`}
                   >
                     <span>Features</span>
@@ -350,8 +349,7 @@ export default function Navbar() {
                       key={item.path}
                       href={item.path}
                       className={`hover:text-[#0063C6] transition-colors duration-200 ${
-                        isActive &&
-                        "text-[#0063C6] font-semibold underline decoration-1"
+                        isActive && "text-[#0063C6] font-semibold"
                       }`}
                     >
                       {item.label}
@@ -373,7 +371,7 @@ export default function Navbar() {
                 </div>
 
                 <Link
-                  href="/demo"
+                  href="https://carehomesupport.netlify.app/signup"
                   className="btn py-[10px] px-[18px] hover:bg-blue-700"
                 >
                   Try for Free

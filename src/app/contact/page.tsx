@@ -18,7 +18,7 @@ export default function ContactPage() {
         </p>
         <p className="mt-4 text-xl text-[#545454] leading-[30px] px-4 md:ps-20 pt-2">
           Our team is here to support you whether you’re running a residential
-          care home, considering a partnership, or simply exploring what’s
+          care agency, considering a partnership, or simply exploring what’s
           possible.
         </p>
         <p className="mt-4 text-xl text-[#545454] leading-[30px] px-4 md:ps-20 pt-2">
@@ -42,7 +42,7 @@ export default function ContactPage() {
           </p>
           <button
             onClick={() => router.push("/demo")}
-            className="flex mt-10 py-[10px] px-4 rounded-3xl border border-[#1f1f1f] text-[#1f1f1f] font-medium"
+            className="flex mt-10 py-[10px] px-4 rounded-3xl border border-[#1f1f1f] text-[#1f1f1f] font-medium cursor-pointer"
           >
             Get support <ChevronRight />
           </button>
@@ -60,13 +60,13 @@ export default function ContactPage() {
           <p className="mt-1 mb-3 text-[#667085] text-lg md:h-[112px]">
             New to Heeges Care and interested in learning more? Book a free demo
             or ask us anything about how Heeges Care can support your care
-            agency
+            agency.
           </p>
           <button
             onClick={() => router.push("/demo")}
-            className="cursor-pointer flex mt-10 py-[10px] px-4 rounded-3xl border border-[#1f1f1f] text-[#1f1f1f] font-medium"
+            className="flex mt-10 py-[10px] px-4 rounded-3xl border border-[#1f1f1f] text-[#1f1f1f] font-medium cursor-pointer"
           >
-            Request Demo <ChevronRight />
+            Contact Us <ChevronRight />
           </button>
         </div>
         <div className="p-4 pb-10 rounded-3xl bg-[#F6F6F6] text-start">
@@ -85,9 +85,9 @@ export default function ContactPage() {
           </p>
           <button
             onClick={() => router.push("/demo")}
-            className="flex mt-10 py-[10px] px-4 rounded-3xl border border-[#1f1f1f] text-[#1f1f1f] font-medium"
+            className="cursor-pointer flex mt-10 py-[10px] px-4 rounded-3xl border border-[#1f1f1f] text-[#1f1f1f] font-medium"
           >
-            Contact Us <ChevronRight />
+            Request Demo <ChevronRight />
           </button>
         </div>
       </div>
@@ -100,10 +100,10 @@ export default function ContactPage() {
       <div className=" relative h-[329px] md:h-[488px] mx-auto md:mt-[80px] ">
         <Image src="/map.png" fill alt="ratings" className="object-contain" />
       </div>
-      <div className="px-4 md:px-0 md:mt-10 text-[#545454] text-base md:text-xl font-medium mb-24">
+      <div className="px-4 md:px-0 md:mt-20 text-[#545454] text-base md:text-xl font-medium mb-24">
         <p className="text-[#101828]">
-          We are remote-first company, but you can occasionally find some of us
-          at
+          We are a remote-first company, but you can occasionally find some of
+          us at
         </p>
         <p className="mt-4">10665 Jasper Avenue Edmonton Alberta T5J 3S9</p>
         <p className="mt-4">+1 587 988 5584</p>

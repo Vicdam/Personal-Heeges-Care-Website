@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import Footer from "../../components/Footer";
@@ -27,7 +26,7 @@ export default function CareManagementPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
           <Image
             src="/Medication.png"
             alt="Image A"
@@ -45,9 +44,9 @@ export default function CareManagementPage() {
             </p>
           </div>
         </div>
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
           <Image
-            src="/feature5.png"
+            src="/complete-health.png"
             alt="Image A"
             width={600} // estimate based on col-span
             height={314} // let height scale automatically
@@ -65,14 +64,18 @@ export default function CareManagementPage() {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8 mt-8">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/feature8.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[300px]">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/vital.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={100} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Vital Signs Recording with Built-In BMI Calculator
@@ -83,14 +86,25 @@ export default function CareManagementPage() {
             </p>
           </div>
         </div>
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/feature7.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
+          <div className="relative h-[300px] overflow-hidden">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/incident1.png"
+                alt="Image A"
+                width={700}
+                height={120}
+              />
+            </div>
+            <div className="absolute top-8 left-10 h-[120px] w-[600px]">
+              <Image
+                src="/incident2.png"
+                alt="Image A"
+                width={600}
+                height={120}
+              />
+            </div>
+          </div>
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Incident Management
@@ -103,14 +117,25 @@ export default function CareManagementPage() {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8 mt-8">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/feature5.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="relative h-[300px] overflow-hidden">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/progresss1.png"
+                alt="Image A"
+                width={700}
+                height={120}
+              />
+            </div>
+            <div className="absolute top-10 left-5 h-[120px] w-[600px]">
+              <Image
+                src="/progress2.png"
+                alt="Image A"
+                width={600}
+                height={120}
+              />
+            </div>
+          </div>
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Progress Note
@@ -121,14 +146,18 @@ export default function CareManagementPage() {
             </p>
           </div>
         </div>
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/Medication.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[300px]">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/goal.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={100} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Goal Setting and Progress Tracking
@@ -141,14 +170,18 @@ export default function CareManagementPage() {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8 mt-8">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/Medication.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
+          <div className="overflow-hidden h-[300px]">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/Medication.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={100} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Custom Data Trackers (Finances, Cannabis, Narcotics, Cigarettes)
@@ -159,7 +192,7 @@ export default function CareManagementPage() {
             </p>
           </div>
         </div>
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
           <Image
             src="/feature5.png"
             alt="Image A"
@@ -180,15 +213,19 @@ export default function CareManagementPage() {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8 mt-8 mb-20">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/feature9.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
-          <div className="text-start pt-8">
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[300px]">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/meal.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={100} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
+          <div className="text-start">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Meal Log
             </h3>
@@ -198,15 +235,19 @@ export default function CareManagementPage() {
             </p>
           </div>
         </div>
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/feature9.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
-          <div className="text-start pt-8">
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[300px]">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/feature9.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={100} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
+          <div className="text-start">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Baths Log
             </h3>

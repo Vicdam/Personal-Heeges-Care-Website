@@ -33,7 +33,7 @@ export default function Footer() {
           management, and give your team the tools they need to provide
           exceptional care with one easy-to-use platform.
         </p>
-        <div className="flex flex-col md:flex-row md:items-center md:justify-center mx-8 md:mx-0 mt-8 md:mt-[84px] mb-[162px]">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-center mx-8 md:mx-0 mt-8 md:mt-[84px] md:mb-[162px] mb-20">
           <a
             href="https://carehomesupport.netlify.app/signup"
             target="_blank"
@@ -89,33 +89,40 @@ export default function Footer() {
                   Resources
                 </p>
                 <div className="text-white text-base font-medium flex flex-col">
-                  <Link href="/blog" className="mt-4">
-                    Blog
-                  </Link>
-                  <Link href="/" className="mt-4">
-                    Help centre
-                  </Link>
-                  <Link href="/" className="mt-4">
-                    Tutorials
-                  </Link>
-                  <Link href="/" className="mt-4">
-                    Support
-                  </Link>
+                  <p className="mt-4">Blog</p>
+                  <p className="mt-4">Help centre</p>
+                  <p className="mt-4">Tutorials</p>
+                  <p className="mt-4">Support</p>
                 </div>
               </div>
-              <div className="text-start">
+              <div className="hidden md:block text-start">
                 <p className="text-[#AFAFAF] text-sm font-semibold mt-8 md:mt-0">
                   Social
                 </p>
                 <div className="text-white text-base font-medium flex flex-col">
-                  <Link href="/" className="mt-4">
+                  <a
+                    href="https://x.com/Heeges_Care?t=4eSlvNty6G6q-ns1IRq6wg&s=08"
+                    className="mt-4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Twitter
-                  </Link>
-                  <Link href="/" className="mt-4">
+                  </a>
+                  <Link
+                    href="https://www.linkedin.com/posts/heeges-care_carewithcompassion-eldercare-newmonth-activity-7368394989334069248-U_71?utm_source=share&utm_medium=member_android&rcm=ACoAADaO91cBB7Zee6EhSFW-qyavT8959ZUM-XY"
+                    className="mt-4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     LinkedIn
                   </Link>
-                  <Link href="/" className="mt-4">
-                    Facebook
+                  <Link
+                    href="https://www.instagram.com/heeges_care?igsh=MWRsamwxdzJ2eW9kbA=="
+                    className="mt-4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram
                   </Link>
                 </div>
               </div>
@@ -124,23 +131,51 @@ export default function Footer() {
                   Legal
                 </p>
                 <div className="text-white text-base font-medium flex flex-col">
-                  <Link href="/" className="mt-4">
-                    Terms
-                  </Link>
-                  <Link href="/" className="mt-4">
-                    Privacy
-                  </Link>
-                  <Link href="/" className="mt-4">
-                    Cookies
-                  </Link>
-                  <Link href="/" className="mt-4">
-                    Licenses
-                  </Link>
+                  <p className="mt-4">Terms</p>
+                  <p className="mt-4">Privacy</p>
+                  <p className="mt-4">Cookies</p>
+                  <p className="mt-4">Licenses</p>
                 </div>
               </div>
             </div>
           </div>
+          <div className="w-3/4 flex justify-between items-center md:hidden mt-10">
+            <Link
+              href="https://x.com/Heeges_Care?t=4eSlvNty6G6q-ns1IRq6wg&s=08"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative h-10 w-10 md:inline-block bg-white rounded-full p-3"
+            >
+              <Image src="/x.png" width="36" height="36" alt="twitter" />
+            </Link>
 
+            <Link
+              href="https://www.linkedin.com/posts/heeges-care_carewithcompassion-eldercare-newmonth-activity-7368394989334069248-U_71?utm_source=share&utm_medium=member_android&rcm=ACoAADaO91cBB7Zee6EhSFW-qyavT8959ZUM-XY"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative h-10 w-10 md:inline-block bg-white rounded-full p-3"
+            >
+              <Image
+                src="/linkedin.png"
+                width="36"
+                height="36"
+                alt="linkedin"
+              />
+            </Link>
+            <Link
+              href="https://www.instagram.com/heeges_care?igsh=MWRsamwxdzJ2eW9kbA=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative h-10 w-10 md:inline-block bg-white rounded-full p-3"
+            >
+              <Image
+                src="/instagram.png"
+                width="36"
+                height="36"
+                alt="instagram"
+              />
+            </Link>
+          </div>
           <div className="relative h-[102px] md:h-[400px] my-10 md:my-0">
             <Image
               src="/footer.svg"
@@ -151,7 +186,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col-reverse md:flex-row justify-between text-[#AFAFAF] mt-8">
-          <p className="text-start mt-8">
+          <p className="text-start mt-8 md:mt-0">
             © 2025 Heeges Care. All rights reserved.
           </p>
           <div className="flex">

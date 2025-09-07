@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import Footer from "../../components/Footer";
@@ -27,14 +26,19 @@ export default function StaffPage() {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
-          <Image
-            src="/Calender.png"
-            alt="calendar"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[300px]">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/task.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={100} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
+
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Task Assignment & Tracking
@@ -45,14 +49,19 @@ export default function StaffPage() {
             </p>
           </div>
         </div>
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
-          <Image
-            src="/on-call.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[300px]">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/on-call.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={100} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
+
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Quick-View Information Recap Dashboard
@@ -66,14 +75,18 @@ export default function StaffPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8 mt-8 mb-20">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
-          <Image
-            src="/task.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[300px]">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/shift.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={100} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Shift Handover (formerly To-Do)
@@ -84,14 +97,18 @@ export default function StaffPage() {
             </p>
           </div>
         </div>
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
-          <Image
-            src="/staff-log.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[300px]">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/maintenance.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={100} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Maintenance & Repair Requests
@@ -104,14 +121,18 @@ export default function StaffPage() {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8 mt-8 mb-20">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
-          <Image
-            src="/task.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[300px]">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/pin.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={100} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Pin or Follow Key Residences and Clients

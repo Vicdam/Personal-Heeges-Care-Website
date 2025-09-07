@@ -1,6 +1,5 @@
 // components/HeroSection.tsx
 "use client";
-import Image from "next/image";
 
 import Footer from "../components/Footer";
 import PricingTableLarge from "../components/priceLargeSCreen";

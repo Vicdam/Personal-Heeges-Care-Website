@@ -1,5 +1,3 @@
-// components/HeroSection.tsx
-"use client";
 import Image from "next/image";
 import Footer from "../components/Footer";
 
@@ -30,10 +28,10 @@ export default function AboutPage() {
       </div>
       <div className=" relative w-[356px] h-[201px] md:w-[90vw] md:h-[90vh] mx-auto mt-16 md:mt-20 ">
         <Image
-          src="/home-page.png"
+          src="/about.png"
           fill
           alt="ratings"
-          className="object-contain"
+          className="object-contain rounded-2xl"
         />
       </div>
       <div className="md:w-1/2 mx-4 md:mx-auto text-start mt-16 md:mt-[92px]">
@@ -80,40 +78,81 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-      <div className="md:hidden relative w-full h-[280px] mx-auto mt-6 bg-[#EDFAFF] px-6 flex flex-col items-center justify-center">
-        <p className="text-[#667085] font-medium">
-          Join 100+ companies already amplifying care
-        </p>
-        <div className="relative mx-auto">
-          <Image
-            src="/smalllogos.png"
-            alt="ratings"
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="w-auto h-auto object-contain mt-6"
-          />
-        </div>
-      </div>
-      <div
+      {/* Logos section */}
+      {/* <div
         className=" 
-            hidden  relative w-full h-[128px] mx-auto mt-10 bg-[#EDFAFF] md:block text-center py-6 px-10"
+           hidden relative w-full md:h-[160px] mx-auto mt-10 bg-[#F6F6F6] md:block text-center py-6 px-10"
       >
-        <p className="text-[#667085] font-medium">
+        <p className="text-[#667085] font-medium w-[280px] md:w-auto">
           Join 100+ companies already amplifying care
         </p>
-        <div className="relative">
-          <Image
-            src="/Logos.png"
-            alt="ratings"
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="w-full h-auto object-contain mt-6"
-          />
+        <div className=" grid grid-cols-3 w-[280px] md:w-5/6 md:flex md:justify-between mt-6 mx-auto">
+          <div className="relative w-[97px]">
+            <Image
+              src="/logo1.png"
+              alt="ratings"
+              width={97}
+              height={32}
+              className=""
+            />
+          </div>
+          <div className="relative w-[97px]">
+            <Image
+              src="/logo2.png"
+              alt="ratings"
+              width={97}
+              height={32}
+              className=""
+            />
+          </div>
+          <div className="relative w-[97px]">
+            <Image
+              src="/logo3.png"
+              alt="ratings"
+              width={97}
+              height={28}
+              className=""
+            />
+          </div>
+          <div className="relative w-[97px]">
+            <Image
+              src="/logo4.png"
+              alt="ratings"
+              width={97}
+              height={32}
+              className=""
+            />
+          </div>
+          <div className="relative w-[97px]">
+            <Image
+              src="/logo5.png"
+              alt="ratings"
+              width={97}
+              height={32}
+              className=""
+            />
+          </div>
+          <div className="relative w-[97px]">
+            <Image
+              src="/logo6.png"
+              alt="ratings"
+              width={97}
+              height={32}
+              className=""
+            />
+          </div>
+          <div className="relative w-[97px]">
+            <Image
+              src="/logo7.png"
+              alt="ratings"
+              width={97}
+              height={32}
+              className=""
+            />
+          </div>
         </div>
-      </div>
-      <div className="md:w-1/2 mx-4 md:mx-auto text-start mt-20 mb-[125px]">
+      </div> */}
+      <div className="md:w-1/2 mx-4 md:mx-auto text-start mt-30 mb-[125px]">
         <p className="text-sm md:text-base rounded-2xl bg-[#EDFAFF] py-1 px-3 inline-block">
           What Makes Heeges Care Different
         </p>

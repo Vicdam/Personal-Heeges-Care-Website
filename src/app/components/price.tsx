@@ -143,15 +143,15 @@ export default function PricingCalculator() {
           return (
             <div
               key={plan.name}
-              className="text-start border-r border-r-[#E2E2E2] last:border-0"
+              className="text-start border-r border-r-[#E2E2E2] border-b border-b-[#E2E2E2] last:border-0"
             >
-              <div className="border-b border-b-[#E2E2E2] pt-0 pb-6">
+              <div className="text-center border-b border-b-[#E2E2E2] pt-0 pb-6">
                 {plan.name === "Growth" && (
                   <div className="py-2 px-3 flex items-center justify-center bg-[#EDFAFF] text-[#0063C6] text-sm font-medium mb-[-40px]">
                     Most popular plan
                   </div>
                 )}
-                <div className="md:h-[220px] w-full ps-6 pb-6 pt-16 mb-6">
+                <div className="md:h-[220px] w-full  pb-6 pt-16 mb-6">
                   <p className="text-[#667085] text-lg font-medium">
                     {plan.name}
                   </p>
@@ -168,7 +168,7 @@ export default function PricingCalculator() {
                         </span>
                       </p>
                       <p className="text-[#101828] font-medium mt-7">
-                        ${total}/per month
+                        ${total} per month
                       </p>
                       <p className="text-[#667085]">
                         {isDiscount ? "Billed annually." : "Month to Month"}
@@ -178,7 +178,7 @@ export default function PricingCalculator() {
                 </div>
                 {plan.name === "Growth" ? (
                   <a
-                    href="https://carehomesupport.netlify.app/"
+                    href="https://carehomesupport.netlify.app/signup"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn flex items-center justify-center cursor-pointer mt-10 w-11/12 py-4 px-5 mx-auto"
@@ -187,7 +187,7 @@ export default function PricingCalculator() {
                   </a>
                 ) : (
                   <a
-                    href="https://carehomesupport.netlify.app/"
+                    href="https://carehomesupport.netlify.app/signup"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mx-auto mt-[44px] flex items-center justify-center py-3 px-5 rounded-3xl border border-[#1f1f1f] w-11/12 text-[#1f1f1f] font-medium"
@@ -196,7 +196,7 @@ export default function PricingCalculator() {
                   </a>
                 )}
               </div>
-              <div className="p-6">
+              <div className="p-6 ">
                 <p className="text-[#101828] font-semibold">FEATURES</p>
                 {/* <p className="text-[#667085]">Billed annually.</p> */}
                 <p className="mt-6 text-[#667085]">

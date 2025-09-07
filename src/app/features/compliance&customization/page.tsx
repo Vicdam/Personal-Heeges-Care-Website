@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import Footer from "../../components/Footer";
@@ -27,15 +26,17 @@ export default function CompliancePage() {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
-          <Image
-            src="/report.png"
-            alt="calendar"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto"
-          />
-          <div className="text-start pt-8">
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] ps-[30px]">
+          <div className="relative w-[301px] h-[2500px] md:w-90 md:h-[300px]  mx-auto mt-14 md:mt-10 mb-[44px]">
+            <Image
+              src="/fully.png"
+              alt="image"
+              fill
+              className="w-full object-cover"
+            />
+          </div>
+
+          <div className="text-start">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Fully PIPEDA-Compliant Data Handling
             </h3>
@@ -45,17 +46,17 @@ export default function CompliancePage() {
             </p>
           </div>
         </div>
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[20px] ps-[30px]">
-          <div className="relative w-[301px] h-[160px] md:w-90 md:h-48  mx-auto mt-14 md:mt-[84px] mb-[44px]">
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] ps-[30px]">
+          <div className="relative w-[301px] h-[2500px] md:w-90 md:h-[300px]  mx-auto mt-14 md:mt-10 mb-[44px]">
             <Image
-              src="/image3.png"
+              src="/bank-level.png"
               alt="image"
               fill
               className="w-full object-cover"
             />
           </div>
 
-          <div className="text-start md:pt-1">
+          <div className="text-start">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Bank-Level Data Security Standards
             </h3>
@@ -67,14 +68,18 @@ export default function CompliancePage() {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8 mb-20 mt-8">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/Dashboard.png"
-            alt="calendar"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
+          <div className="overflow-hidden h-[300px]">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/flexible.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={120} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Flexible Terminology Settings
@@ -85,14 +90,25 @@ export default function CompliancePage() {
             </p>
           </div>
         </div>
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] md:pb-0 pt-2 md:pt-0">
-          <Image
-            src="/frame3.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] md:pb-42px pt-2 md:pt-[30px]">
+          <div className="relative h-[300px] overflow-hidden">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/client1.png"
+                alt="Image A"
+                width={700}
+                height={120}
+              />
+            </div>
+            <div className="absolute top-12 left-10 h-[120px] w-[700px]">
+              <Image
+                src="/client2.png"
+                alt="Image A"
+                width={700}
+                height={120}
+              />
+            </div>
+          </div>
           <div className="text-start pt-8 ps-4 md:ps-10">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Client and Residence Archiving

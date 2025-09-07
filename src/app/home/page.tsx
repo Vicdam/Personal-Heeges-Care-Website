@@ -2,47 +2,14 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { ArrowLeft, ArrowRight, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Faq from "../components/faq";
+import Slider from "../components/slider";
 
-const testimonials = [
-  {
-    id: 1,
-    name: "Sarah M.",
-    job: "Group Home Administrator",
-    image: "/user2.jpg",
-    message:
-      "“Heeges Care has completely transformed how we manage our residents. The system is intuitive, and features like Progress Notes and Medication Management save us hours of paperwork every week. It truly helps us focus on what matters most, providing quality care.”",
-  },
-  {
-    id: 2,
-    name: "James L.",
-    job: "Residential Care Staff",
-    image: "/user1.jpg",
-    message:
-      "As a caregiver, I love how easy it is to see which staff members are on call and access client information instantly. Heeges Care makes daily routines smoother and gives me peace of mind knowing everything is organized and up-to-date.",
-  },
-  {
-    id: 3,
-    name: "Linda K.",
-    job: "Director of Residential Services",
-    image: "/user3.jpg",
-    message:
-      "“From intake assessments to residence and task setup, Heeges Care has streamlined every part of my workflow. The team now truly understands the realities of care, and it shows in how thoughtful and practical the software is.”",
-  },
-  {
-    id: 4,
-    name: "James L.",
-    job: "Residential Care Staff",
-    image: "/user1.jpg",
-    message:
-      '"When I heard my agency was switching to Heeges Care, I wondered what was so special to warrant the move. After just a week, I could see why. It’s built for caregivers and makes my daily tasks much easier. I can finally focus on providing care instead of paperwork."',
-  },
-];
 const features = [
   {
     id: 1,
@@ -99,22 +66,7 @@ const features = [
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0); // Center one as active
   const router = useRouter();
-  const [visibleItems, setVisibleItems] = useState(testimonials.slice(0, 3));
   const [direction, setDirection] = useState<"next" | "prev">("next");
-
-  const next = () => {
-    setDirection("next");
-    const first = testimonials.shift();
-    testimonials.push(first!);
-    setVisibleItems(testimonials.slice(0, 3));
-  };
-
-  const prev = () => {
-    setDirection("prev");
-    const last = testimonials.pop();
-    testimonials.unshift(last!);
-    setVisibleItems(testimonials.slice(0, 3));
-  };
 
   const getVisibleImages = () => {
     const prev = (activeIndex - 1 + features.length) % features.length;
@@ -137,18 +89,18 @@ export default function Home() {
   };
 
   return (
-    <section className="text-center px-4 pt-16 md:pt-28 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[70vh] md:h-screen text-black ">
+    <section className="text-center pt-8 md:pt-28 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[80vh] md:h-[110vh] xl:h-[150vh] text-black ">
       <p className="rounded-[16px] text-sm font-medium md:text-base bg-[#EDFAFF] py-2 px-[10px] inline-flex">
         Automate the Work. Amplify the Care
       </p>
-      <h1 className="text-4xl md:text-5xl font-semibold mt-4 text-[#141414] leading-[44px] md:leading-[60px] md:w-[670px] md:mx-auto">
+      <h1 className="text-3xl md:text-5xl font-semibold mt-4 text-[#141414] md:leading-[60px] md:w-[670px] md:mx-auto px-4 md:px-0">
         Simplifying Care Management for Residential Care Homes
       </h1>
       <p className="mx-4 mt-4 text-lg md:text-xl text-[#545454] md:w-[670px] md:mx-auto">
         Streamline daily care, simplify documentation, and stay compliant,
         whether you’re a small group home or a large residential agency.
       </p>
-      <div className="flex flex-col md:flex-row md:items-center md:justify-center mx-4 my-8 md:my-12">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-center mx-4 my-6 md:my-12">
         <a
           href="https://carehomesupport.netlify.app/signup"
           target="_blank"
@@ -194,49 +146,90 @@ export default function Home() {
         </div>
       </div>
 
-      <div className=" relative w-[356px] h-[201px] md:w-[90vw] md:h-[90vh] mx-auto mt-16 md:mt-20 ">
+      <div className="mx-4 md:mx-10 2xl:ps-30 relative w-90vw 2xl:100vw h-[30vh] md:h-[70vh] xl:h-[85vh] 2xl:h-[95vh]  mt-16 md:mt-20 ">
         <Image
           src="/home-page.png"
           fill
           alt="ratings"
-          className="object-contain"
+          className="text-center object-cover rounded-2xl"
         />
       </div>
-      <div className="md:hidden relative w-full h-[280px] mx-auto mt-6 bg-[#EDFAFF] px-6 flex flex-col items-center justify-center">
-        <p className="text-[#667085] font-medium">
-          Join 100+ companies already amplifying care
-        </p>
-        <div className="relative mx-auto">
-          <Image
-            src="/smalllogos.png"
-            alt="ratings"
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="w-auto h-auto object-contain mt-6"
-          />
-        </div>
-      </div>
-      <div
+      {/* Logos section */}
+      {/* <div
         className=" 
-      hidden  relative w-full h-[128px] mx-auto mt-10 bg-[#EDFAFF] md:block text-center py-6 px-10"
+      relative w-full md:h-[160px] mx-auto mt-10 bg-[#F6F6F6] md:block text-center py-6 px-10"
       >
-        <p className="text-[#667085] font-medium">
+        <p className="text-[#667085] font-medium w-[280px] md:w-auto">
           Join 100+ companies already amplifying care
         </p>
-        <div className="relative">
-          <Image
-            src="/Logos.png"
-            alt="ratings"
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="w-full h-auto object-contain mt-6"
-          />
+        <div className=" grid grid-cols-3 w-[250px] md:w-5/6 md:flex md:justify-between mt-6 mx-auto">
+          <div className="relative w-[97px]">
+            <Image
+              src="/logo1.png"
+              alt="ratings"
+              width={97}
+              height={32}
+              className=""
+            />
+          </div>
+          <div className="relative w-[97px]">
+            <Image
+              src="/logo2.png"
+              alt="ratings"
+              width={97}
+              height={32}
+              className=""
+            />
+          </div>
+          <div className="relative w-[97px]">
+            <Image
+              src="/logo3.png"
+              alt="ratings"
+              width={97}
+              height={28}
+              className=""
+            />
+          </div>
+          <div className="relative w-[97px]">
+            <Image
+              src="/logo4.png"
+              alt="ratings"
+              width={97}
+              height={32}
+              className=""
+            />
+          </div>
+          <div className="relative w-[97px]">
+            <Image
+              src="/logo5.png"
+              alt="ratings"
+              width={97}
+              height={32}
+              className=""
+            />
+          </div>
+          <div className="relative w-[97px]">
+            <Image
+              src="/logo6.png"
+              alt="ratings"
+              width={97}
+              height={32}
+              className=""
+            />
+          </div>
+          <div className="relative w-[97px]">
+            <Image
+              src="/logo7.png"
+              alt="ratings"
+              width={97}
+              height={32}
+              className=""
+            />
+          </div>
         </div>
-      </div>
+      </div> */}
       {/* Feature Section */}
-      <div className="mt-20 text-start mx-4 md:mx-10 pb-[80px]">
+      <div className="mt-20 text-start mx-4 md:mx-10 pb-20 [@media(min-width:465px)_and_(max-width:767px)]:mt-40">
         <p className="text-sm md:text-base font-medium rounded-2xl bg-[#EDFAFF] py-1 px-3 inline-block">
           Features
         </p>
@@ -245,8 +238,8 @@ export default function Home() {
         </h3>
         <div className="flex justify-between leading[30px] ">
           <p className="mt-5 text-xl text-[#667085] md:w-[769px]">
-            Should be Built by caregivers and administrators who understand the
-            realities of care.
+            Built by caregivers and administrators who understand the realities
+            of care.
           </p>
           <button
             onClick={() => router.push("/features")}
@@ -261,7 +254,7 @@ export default function Home() {
               <div
                 key={feature.id}
                 onMouseEnter={() => setActiveIndex(index)}
-                className={`cursor-pointer p-4 pt-8 first:pt-0 border-l-8   transition-all ${
+                className={`cursor-pointer p-4 pt-12 first:pt-0 border-l-8   transition-all ${
                   activeIndex === index
                     ? "border-[#0C8B22] rounded-lg"
                     : "border-[#F6F6F6]"
@@ -281,7 +274,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="hidden relative md:flex flex-col gap-6 w-full">
+          <div className="hidden relative xl:flex flex-col gap-3 w-full">
             {getVisibleImages().map((image, idx) => {
               return (
                 <AnimatePresence key={image.id} mode="wait">
@@ -294,11 +287,11 @@ export default function Home() {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: direction === "next" ? -100 : 100, opacity: 0 }}
                     transition={{ duration: 0.5 }}
-                    className={`transition-all duration-500 flex-shrink-0 w-[610px] rounded-2xl
+                    className={`transition-all duration-500 flex-shrink-0 w-[550px] rounded-2xl
                      ${
                        idx === 1
                          ? "scale-105 bg-gradient-to-r from-[#0080FF]  to-[#63F17B] p-2 z-20"
-                         : "scale-80 opacity-50 grayscale blur-sm"
+                         : "scale-80 opacity-50 grayscale blur-sm h-[200px] w-[600px]"
                      }`}
                   >
                     <Image
@@ -314,6 +307,7 @@ export default function Home() {
             })}
           </div>
         </div>
+        {/* when you want to add the scale-105 and 80 */}
         <button
           onClick={() => router.push("/features")}
           className="xl:hidden border border-[#D0D5DD] rounded-3xl shadow-[0px 1px 2px 0px rgba(16, 24, 40, 0.05) h-12 font-medium text-[#344054] text-base px-5 w-full mt-12"
@@ -322,7 +316,7 @@ export default function Home() {
         </button>
       </div>
       {/* Testimonials Section */}
-      <div className="bg-[#F6F6F6] md:bg-[rgba(99,241,123,0.10)] py-10 md:py-[96px] ">
+      <div className="bg-[#F6F6F6] md:bg-[rgba(99,241,123,0.10)] py-10 md:py-10 ">
         <div className="text-start px-4 md:px-10 mb-10 md:mb-16">
           <p className="rounded-2xl text-sm md:text-base bg-[#EDFAFF] py-1 px-3 inline-block">
             Testimonials
@@ -332,78 +326,12 @@ export default function Home() {
           </h3>
         </div>
 
-        <div className="w-full overflow-hidden">
-          <div className="relative flex justify-center gap-6 w-full">
-            {visibleItems.map((item, idx) => (
-              <AnimatePresence mode="wait" custom={direction} key={item.id}>
-                <motion.div
-                  key={item.id}
-                  custom={direction} // Pass direction directly
-                  variants={slideVariants}
-                  initial="enter"
-                  animate="center"
-                  exit="exit"
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                  className={`rounded-2xl shadow p-6 transition-all duration-500 flex-shrink-0 w-[90%] sm:w-[45%] md:w-[40%] lg:w-[40%] 
-                ${
-                  idx === 1
-                    ? "md:scale-100 bg-[#00468C] text-white xl:w-[712px]"
-                    : "md:scale-90 bg-white"
-                }`}
-                >
-                  <div className="relative text-start">
-                    <Image
-                      src="/testLogo.svg" // Ensure correct path
-                      width={140}
-                      height={40}
-                      alt="company logo"
-                    />
-                  </div>
-                  <p className="my-10 text-start text-3xl">{item.message}</p>
-                  <div className="flex text-start">
-                    <Image
-                      src={item.image}
-                      alt={item.name}
-                      width={60}
-                      height={60}
-                      className="rounded-[20px] mb-2 me-4"
-                      priority
-                    />
-                    <div>
-                      <p className="font-medium text-2xl">{item.name}</p>
-                      <p
-                        className={`text-base ${
-                          idx === 1 ? "text-[#E2E2E2]" : "text-[#757575]"
-                        }`}
-                      >
-                        {item.job}
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
-            ))}
-          </div>
-          <div className="flex gap-6 mt-16 items-center justify-center">
-            <button
-              onClick={prev}
-              className="p-3 bg-gray-200 rounded-full hover:bg-gray-300"
-            >
-              <ArrowLeft className="w-5 h-5" />
-            </button>
-            <button
-              onClick={next}
-              className="p-3 bg-gray-200 rounded-full hover:bg-gray-300"
-            >
-              <ArrowRight className="w-5 h-5" />
-            </button>
-          </div>
-        </div>
+        <Slider />
       </div>
       {/* Industry focus Section */}
       <div className="px-4 py-10 md:py-20  md:px-10 text-start">
         <p className="text-sm md:text-baserounded-2xl bg-[#EDFAFF] py-1 px-3 inline-block">
-          Industry Focus
+          Who We Serve
         </p>
         <h3 className="mt-3 text-3xl md:text-4xl font-semibold text-[#101828]">
           Empowering Everyone in the Care Journey
@@ -418,7 +346,7 @@ export default function Home() {
             <p className=" text-base mt-4">
               Gain full visibility into your operations, ensure compliance, and
               track care quality effortlessly, all on one platform designed to
-              make running your homes smoother and more efficient.
+              make running your agencies smoother and more efficient.
             </p>
             <a
               href="https://carehomesupport.netlify.app/signup"
@@ -461,6 +389,7 @@ export default function Home() {
       </div>
       {/* faq Section */}
       <Faq />
+
       {/* Footer Section */}
       <Footer />
     </section>

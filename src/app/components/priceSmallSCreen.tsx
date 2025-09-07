@@ -1,8 +1,6 @@
 // components/HeroSection.tsx
-"use client";
-import Image from "next/image";
-import { Check, Minus } from "lucide-react";
-import Footer from "../components/Footer";
+
+import { Check } from "lucide-react";
 import router from "next/router";
 
 export default function PricingTableSmall() {
@@ -21,43 +19,43 @@ export default function PricingTableSmall() {
           <table className="min-w-full text-center">
             <tbody>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Max Number of Residences
                 </td>
-                <td className="p-3 py-4 ">1</td>
+                <td className=" py-4 ">1</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Max Number of Clients
                 </td>
-                <td className="p-3 py-4 ">5</td>
+                <td className=" py-4 ">5</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Max Number of Staff / Admin
                 </td>
-                <td className="p-3 py-4 ">5</td>
+                <td className=" py-4 ">5</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Minimum Total Users (Clients and Staff)
                 </td>
-                <td className="p-3 py-4 ">1</td>
+                <td className=" py-4 ">1</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Storage Capacity (Please comment this out for now)
                 </td>
-                <td className="p-3 py-4 ">10 Gb</td>
+                <td className=" py-4 ">10 Gb</td>
               </tr>
               {/* Core Capacity Section */}
               <tr className=" text-left">
-                <td className="py-2 font-medium text-[#141414] text-lg">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Client Profile Management
                 </td>
               </tr>
-              <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+              <tr className="text-base text-[#1F1F1F] border-y border-y-[#E2E2E2] font-medium">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Centralized Client Profile Management
                 </td>
                 <td className="py-4 text-[#1F1F1F] text-left w-full">
@@ -75,11 +73,11 @@ export default function PricingTableSmall() {
 
               {/* Care Management & Delivery */}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Care Management & Delivery
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="py-4 font-medium text-[#141414] w-2/6 text-left">
                   Complete Health Records
                 </td>
@@ -114,11 +112,11 @@ export default function PricingTableSmall() {
 
               {/* Client Scheduling & Calendars */}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Client Scheduling & Calendars
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="py-4 font-medium text-[#141414] w-2/6 text-left">
                   Organization-Level Master Calendar *
                 </td>
@@ -127,13 +125,13 @@ export default function PricingTableSmall() {
                 </td>
               </tr>
 
-              {/* Compliance & Reporting*/}
+              {/*  Task & Workflow Management*/}
               <tr className=" text-left">
-                <td className="py-2 w-full pt-6 font-medium text-[#141414] text-lg">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Task & Workflow Management
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="py-4 font-medium text-[#141414] w-2/6 text-left">
                   Task Assignment & Tracking
                 </td>
@@ -144,11 +142,11 @@ export default function PricingTableSmall() {
 
               {/* Operations & Administration*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Operations & Administration
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Role-Based Residence Announcements *
                 </td>
@@ -158,11 +156,11 @@ export default function PricingTableSmall() {
               </tr>
               {/*  Connect & Communicate*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Connect & Communicate
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Residence Staff Directory
                 </td>
@@ -180,11 +178,11 @@ export default function PricingTableSmall() {
               </tr>
               {/*  Compliance & Customization*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Compliance & Customization
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Fully PIPEDA-Compliant Data Handling
                 </td>
@@ -211,11 +209,11 @@ export default function PricingTableSmall() {
               </tr>
               {/*  Support & Training*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Support & Training
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Live Chat
                 </td>
@@ -274,55 +272,49 @@ export default function PricingTableSmall() {
           <table className="min-w-full text-center">
             <tbody>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
-                  If paid month to month
-                </td>
-                <td className="p-3 py-4 ">$9</td>
-              </tr>
-              <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className="py-4 font-medium text-[#141414] w-2/6 text-left">
                   Max Number of Residences
                 </td>
-                <td className="p-3 py-4 ">5</td>
+                <td className=" py-4 ">5</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Max Number of Clients
                 </td>
-                <td className="p-3 py-4 ">15</td>
+                <td className="py-4 ">15</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Max Number of Staff / Admin
                 </td>
-                <td className="p-3 py-4 ">Unlimited</td>
+                <td className=" py-4 ">Unlimited</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Minimum Total Users (Clients and Staff)
                 </td>
-                <td className="p-3 py-4 ">5</td>
+                <td className=" py-4 ">5</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Family Account
                 </td>
-                <td className="p-3 py-4 ">1 per Client</td>
+                <td className=" py-4 ">1 per Client</td>
               </tr>
-              <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+              {/* <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Storage Capacity (Please comment this out for now)
                 </td>
-                <td className="p-3 py-4 ">50 Gb</td>
-              </tr>
+                <td className=" py-4 ">50 Gb</td>
+              </tr> */}
               {/* Core Capacity Section */}
               <tr className=" text-left">
-                <td className="py-2 font-medium text-[#141414] text-lg">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Client Profile Management
                 </td>
               </tr>
-              <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+              <tr className="text-base text-[#1F1F1F] border-y border-y-[#E2E2E2] font-medium">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Centralized Client Profile Management
                 </td>
                 <td className="py-4 text-[#1F1F1F] text-left w-full">
@@ -340,11 +332,11 @@ export default function PricingTableSmall() {
 
               {/* Care Management & Delivery */}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg">
+                <td className="py-2 pt-6 font-bold text-[#141414] text-xl">
                   Care Management & Delivery
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="py-4 font-medium text-[#141414] w-2/6 text-left">
                   Complete Health Records
                 </td>
@@ -395,11 +387,11 @@ export default function PricingTableSmall() {
 
               {/* Client Scheduling & Calendars */}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Client Scheduling & Calendars
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="py-4 font-medium text-[#141414] w-2/6 text-left">
                   Client Appointment Booking & Management *
                 </td>
@@ -424,13 +416,13 @@ export default function PricingTableSmall() {
                 </td>
               </tr>
 
-              {/* Compliance & Reporting*/}
+              {/* Task & Workflow Management*/}
               <tr className=" text-left">
-                <td className="py-2 w-full pt-6 font-medium text-[#141414] text-lg">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Task & Workflow Management
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="py-4 font-medium text-[#141414] w-2/6 text-left">
                   Task Assignment & Tracking
                 </td>
@@ -456,11 +448,11 @@ export default function PricingTableSmall() {
               </tr>
               {/* Operations & Administration*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Operations & Administration
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Multi-Residence Management from a Single Dashboard
                 </td>
@@ -486,11 +478,11 @@ export default function PricingTableSmall() {
               </tr>
               {/*  Connect & Communicate*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Connect & Communicate
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Residence Staff Directory
                 </td>
@@ -516,11 +508,11 @@ export default function PricingTableSmall() {
               </tr>
               {/*  Compliance & Customization*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Compliance & Customization
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Fully PIPEDA-Compliant Data Handling
                 </td>
@@ -555,11 +547,11 @@ export default function PricingTableSmall() {
               </tr>
               {/*  Support & Training*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Support & Training
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Live Chat
                 </td>
@@ -621,55 +613,49 @@ export default function PricingTableSmall() {
           <table className="min-w-full text-center">
             <tbody>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
-                  If paid month to month
-                </td>
-                <td className="p-3 py-4 ">$15</td>
-              </tr>
-              <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Max Number of Residences
                 </td>
-                <td className="p-3 py-4 ">Unlimited</td>
+                <td className=" py-4 ">Unlimited</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Max Number of Clients
                 </td>
-                <td className="p-3 py-4 ">Unlimited</td>
+                <td className=" py-4 ">Unlimited</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Max Number of Staff / Admin
                 </td>
-                <td className="p-3 py-4 ">Unlimited</td>
+                <td className=" py-4 ">Unlimited</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Minimum Total Users (Clients and Staff)
                 </td>
-                <td className="p-3 py-4 ">5</td>
+                <td className=" py-4 ">5</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Family Account
                 </td>
-                <td className="p-3 py-4 ">Unlimited</td>
+                <td className=" py-4 ">Unlimited</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Storage Capacity (Please comment this out for now)
                 </td>
-                <td className="p-3 py-4 ">100 Gb</td>
+                <td className=" py-4 ">100 Gb</td>
               </tr>
               {/* Core Capacity Section */}
               <tr className=" text-left">
-                <td className="py-2 font-medium text-[#141414] text-lg">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Client Profile Management
                 </td>
               </tr>
-              <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+              <tr className="text-base text-[#1F1F1F] border-y border-y-[#E2E2E2] font-medium">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Centralized Client Profile Management
                 </td>
                 <td className="py-4 text-[#1F1F1F] text-left w-full">
@@ -702,7 +688,7 @@ export default function PricingTableSmall() {
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
-                  Saved Addresses for Clients **
+                  Saved Places for Clients **
                 </td>
                 <td className="py-4 text-[#1F1F1F] text-left w-full">
                   <Check className="mx-auto w-5 h-5 " />
@@ -710,11 +696,11 @@ export default function PricingTableSmall() {
               </tr>
               {/* Care Management & Delivery */}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Care Management & Delivery
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="py-4 font-medium text-[#141414] w-2/6 text-left">
                   Medication Tracking and Administration *
                 </td>
@@ -804,11 +790,11 @@ export default function PricingTableSmall() {
               </tr>
               {/* Client Scheduling & Calendars */}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Client Scheduling & Calendars
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="py-4 font-medium text-[#141414] w-2/6 text-left">
                   Client Appointment Booking & Management *
                 </td>
@@ -833,13 +819,13 @@ export default function PricingTableSmall() {
                 </td>
               </tr>
 
-              {/* Compliance & Reporting*/}
-              <tr className=" text-left">
-                <td className="py-2 w-full pt-6 font-medium text-[#141414] text-lg">
+              {/*  Task & Workflow Management*/}
+              <tr className="text-left">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Task & Workflow Management
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="py-4 font-medium text-[#141414] w-2/6 text-left">
                   Task Assignment & Tracking
                 </td>
@@ -873,11 +859,11 @@ export default function PricingTableSmall() {
               </tr>
               {/* Operations & Administration*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Operations & Administration
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Multi-Residence Management from a Single Dashboard
                 </td>
@@ -935,11 +921,11 @@ export default function PricingTableSmall() {
               </tr>
               {/*  Connect & Communicate*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Connect & Communicate
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Residence Staff Directory
                 </td>
@@ -965,11 +951,11 @@ export default function PricingTableSmall() {
               </tr>
               {/*  Compliance & Customization*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Compliance & Customization
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Fully PIPEDA-Compliant Data Handling
                 </td>
@@ -1004,11 +990,11 @@ export default function PricingTableSmall() {
               </tr>
               {/*  Support & Training*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Support & Training
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Live Chat
                 </td>
@@ -1070,55 +1056,49 @@ export default function PricingTableSmall() {
           <table className="min-w-full text-center">
             <tbody>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
-                  If paid month to month
-                </td>
-                <td className="p-3 py-4 ">$22</td>
-              </tr>
-              <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Max Number of Residences
                 </td>
-                <td className="p-3 py-4 ">Unlimited</td>
+                <td className=" py-4 ">Unlimited</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Max Number of Clients
                 </td>
-                <td className="p-3 py-4 ">Unlimited</td>
+                <td className=" py-4 ">Unlimited</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Max Number of Staff / Admin
                 </td>
-                <td className="p-3 py-4 ">Unlimited</td>
+                <td className=" py-4 ">Unlimited</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Minimum Total Users (Clients and Staff)
                 </td>
-                <td className="p-3 py-4 ">5</td>
+                <td className=" py-4 ">5</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Family Account
                 </td>
-                <td className="p-3 py-4 ">Unlimited</td>
+                <td className=" py-4 ">Unlimited</td>
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Storage Capacity (Please comment this out for now)
                 </td>
-                <td className="p-3 py-4 ">Unlimited</td>
+                <td className=" py-4 ">Unlimited</td>
               </tr>
               {/* Core Capacity Section */}
               <tr className=" text-left">
-                <td className="py-2 font-medium text-[#141414] text-lg">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Client Profile Management
                 </td>
               </tr>
-              <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
+              <tr className="text-base text-[#1F1F1F] border-y border-y-[#E2E2E2] font-medium">
+                <td className=" py-4 font-medium text-[#141414] w-2/6 text-left">
                   Centralized Client Profile Management
                 </td>
                 <td className="py-4 text-[#1F1F1F] text-left w-full">
@@ -1159,11 +1139,11 @@ export default function PricingTableSmall() {
               </tr>
               {/* Care Management & Delivery */}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Care Management & Delivery
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="py-4 font-medium text-[#141414] w-2/6 text-left">
                   Medication Tracking and Administration *
                 </td>
@@ -1262,11 +1242,11 @@ export default function PricingTableSmall() {
               </tr>
               {/* Client Scheduling & Calendars */}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Client Scheduling & Calendars
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="py-4 font-medium text-[#141414] w-2/6 text-left">
                   Client Appointment Booking & Management *
                 </td>
@@ -1291,13 +1271,13 @@ export default function PricingTableSmall() {
                 </td>
               </tr>
 
-              {/* Compliance & Reporting*/}
+              {/* Task & Workflow Management*/}
               <tr className=" text-left">
-                <td className="py-2 w-full pt-6 font-medium text-[#141414] text-lg">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Task & Workflow Management
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="py-4 font-medium text-[#141414] w-2/6 text-left">
                   Task Assignment & Tracking
                 </td>
@@ -1340,11 +1320,11 @@ export default function PricingTableSmall() {
               </tr>
               {/* Operations & Administration*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Operations & Administration
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Multi-Residence Management from a Single Dashboard
                 </td>
@@ -1418,11 +1398,11 @@ export default function PricingTableSmall() {
               </tr>
               {/*  Connect & Communicate*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Connect & Communicate
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Residence Staff Directory
                 </td>
@@ -1448,11 +1428,11 @@ export default function PricingTableSmall() {
               </tr>
               {/*  Compliance & Customization*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Compliance & Customization
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Fully PIPEDA-Compliant Data Handling
                 </td>
@@ -1487,11 +1467,11 @@ export default function PricingTableSmall() {
               </tr>
               {/*  Support & Training*/}
               <tr className=" text-left">
-                <td className="py-2 pt-6 font-medium text-[#141414] text-lg w-full">
+                <td className="py-6  text-[#101828] text-xl font-bold">
                   Support & Training
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className=" py-4 font-medium text-[#141414] text-left">
                   Live Chat
                 </td>

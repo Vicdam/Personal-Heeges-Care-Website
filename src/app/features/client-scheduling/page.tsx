@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import Footer from "../../components/Footer";
@@ -18,8 +17,7 @@ export default function StaffPage() {
           Client Scheduling & Calendars
         </p>
         <h3 className="text-3xl font-medium text-[#101828]">
-          Designed for effortless, organized care. Instead of Empower teams with
-          clarity and control
+          Designed for effortless, organized care.
         </h3>
         <p className="mt-4 md:mt-5 text-[#667085] text-xl md:w-[1150px]">
           Caregivers stay on top of appointments, activities, and reminders, so
@@ -28,9 +26,9 @@ export default function StaffPage() {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
           <Image
-            src="/Calender.png"
+            src="/residence-calendar.png"
             alt="calendar"
             width={600} // estimate based on col-span
             height={314} // let height scale automatically
@@ -46,9 +44,9 @@ export default function StaffPage() {
             </p>
           </div>
         </div>
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
           <Image
-            src="/on-call.png"
+            src="/residence-calendar.png"
             alt="Image A"
             width={600} // estimate based on col-span
             height={314} // let height scale automatically
@@ -67,9 +65,9 @@ export default function StaffPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8 mt-8 mb-20">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
           <Image
-            src="/task.png"
+            src="/Organization-Calendar.png"
             alt="Image A"
             width={600} // estimate based on col-span
             height={314} // let height scale automatically

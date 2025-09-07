@@ -36,26 +36,26 @@ export default function PricingTableLarge() {
             <thead className=" bg-white shadow z-100">
               <tr className=" text-[#141414] text-xl">
                 <th className="p-4 w-2/6"></th>
-                <th className="p-4 text-xl">
+                <th className="p-4 text-xl pt-6">
                   Micro
                   <span className="block text-[#757575] text-base">Free</span>
                 </th>
-                <th className="p-4">
+                <th className="p-4 pt-6">
                   Standard
                   <span className="block text-[#757575] text-base">
                     $7 / User / Month
                   </span>
                 </th>
-                <th className="p-4">
-                  <span className="rounded-[16px] bg-[#EDFAFF] mix-blend-multiply py-1 px-3 text-sm w-[98px] mx-auto font-medium block">
-                    Basic plan
+                <th className="p-4 pt-1">
+                  <span className="rounded-[16px] bg-[#EDFAFF] mix-blend-multiply py-1 px-3 text-sm w-[140px] mx-auto font-medium block">
+                    Most Popular
                   </span>
                   Growth
                   <span className="block text-[#757575] text-base">
                     $12 / User / Month
                   </span>
                 </th>
-                <th className="p-4">
+                <th className="p-4 pt-6">
                   Professional
                   <span className="block text-[#757575] text-base">
                     $18 / User / Month
@@ -64,15 +64,6 @@ export default function PricingTableLarge() {
               </tr>
             </thead>
             <tbody>
-              <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] text-lg w-2/6 text-left">
-                  If paid month to month
-                </td>
-                <td className="p-3 py-4 text-[#1F1F1F] font-bold"></td>
-                <td className="p-3 py-4 text-[#1F1F1F] font-bold">$9</td>
-                <td className="p-3 py-4 text-[#1F1F1F] font-bold">$15</td>
-                <td className="p-3 py-4 text-[#1F1F1F] font-bold">$22</td>
-              </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
                 <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
                   Max Number of Residences
@@ -121,22 +112,14 @@ export default function PricingTableLarge() {
                 <td className="p-3 py-4">Unlimited</td>
                 <td className="p-3 py-4 ">Unlimited</td>
               </tr>
-              <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2] font-medium">
-                <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
-                  Storage Capacity (Please comment this out for now)
-                </td>
-                <td className="p-3 py-4 ">10 Gb</td>
-                <td className="p-3 py-4 ">50 Gb</td>
-                <td className="p-3 py-4">100 Gb</td>
-                <td className="p-3 py-4 ">Unlimited</td>
-              </tr>
+
               {/* Client Profile Management */}
-              <tr className=" text-left">
-                <td className="py-2 px-4 font-medium text-[#141414] text-2xl w-2/6">
+              <tr className=" text-left pt-10">
+                <td className="px-3 pt-16 pb-6 font-medium text-[#141414] text-2xl w-2/6">
                   Client Profile Management
                 </td>
               </tr>
-              <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#1F1F1F] border-y border-y-[#E2E2E2]">
                 <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
                   Centralized Client Profile Management
                 </td>
@@ -206,7 +189,7 @@ export default function PricingTableLarge() {
               </tr>
               <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2]">
                 <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
-                  Saved Addresses for Clients **
+                  Saved Places for Clients **
                 </td>
                 <td className="p-3 py-4 text-[#1F1F1F]">
                   <Minus className="mx-auto w-5 h-5 text-[#AFAFAF] " />
@@ -222,12 +205,13 @@ export default function PricingTableLarge() {
                 </td>
               </tr>
               {/* Care Management & Delivery */}
-              <tr className=" text-left">
-                <td className="py-2 px-4 font-medium text-[#141414] text-2xl w-2/6">
+              <tr className=" text-left pt-10">
+                <td className="px-3 pt-16 pb-6 font-medium text-[#141414] text-2xl w-2/6">
                   Care Management & Delivery
                 </td>
               </tr>
-              <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2]">
+
+              <tr className="text-base text-[#1F1F1F] border-y border-y-[#E2E2E2]">
                 <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
                   Medication Tracking and Administration *
                 </td>
@@ -434,12 +418,13 @@ export default function PricingTableLarge() {
               </tr>
 
               {/* Client Scheduling & Calendars */}
-              <tr className=" text-left">
-                <td className="py-2 px-4 font-medium text-[#141414] text-2xl w-2/6">
+              <tr className=" text-left pt-10">
+                <td className="px-3 pt-16 pb-6 font-medium text-[#141414] text-2xl w-2/6">
                   Client Scheduling & Calendars
                 </td>
               </tr>
-              <tr className="text-base text-[#1F1F1F] border-b border-b-[#E2E2E2]">
+
+              <tr className="text-base text-[#1F1F1F] border-y border-y-[#E2E2E2]">
                 <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
                   Client Appointment Booking & Management *
                 </td>
@@ -491,13 +476,14 @@ export default function PricingTableLarge() {
                 </td>
               </tr>
 
-              {/* Compliance & Reporting*/}
-              <tr className=" text-left">
-                <td className="py-2 px-4 pt-6 font-medium text-[#141414] text-2xl w-2/6">
+              {/*  Task & Workflow Management*/}
+              <tr className=" text-left pt-10">
+                <td className="px-3 pt-16 pb-6 font-medium text-[#141414] text-2xl w-2/6">
                   Task & Workflow Management
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
                   Task Assignment & Tracking
                 </td>
@@ -584,12 +570,13 @@ export default function PricingTableLarge() {
               </tr>
 
               {/* Operations & Administration*/}
-              <tr className=" text-left">
-                <td className="py-2 px-4 pt-6 font-medium text-[#141414] text-2xl w-2/6">
+              <tr className=" text-left pt-10">
+                <td className="px-3 pt-16 pb-6 font-medium text-[#141414] text-2xl w-2/6">
                   Operations & Administration
                 </td>
               </tr>
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
                   Multi-Residence Management from a Single Dashboard
                 </td>
@@ -752,13 +739,13 @@ export default function PricingTableLarge() {
                 </td>
               </tr>
               {/* Connect & Communicate*/}
-              <tr className=" text-left">
-                <td className="py-2 px-4 pt-6 font-medium text-[#141414] text-2xl w-2/6">
+              <tr className=" text-left pt-10">
+                <td className="px-3 pt-16 pb-6 font-medium text-[#141414] text-2xl w-2/6">
                   Connect & Communicate
                 </td>
               </tr>
 
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
                   Residence Staff Directory
                 </td>
@@ -814,13 +801,13 @@ export default function PricingTableLarge() {
               </tr>
 
               {/* Compliance & Customization*/}
-              <tr className=" text-left">
-                <td className="py-2 px-4 pt-6 font-medium text-[#141414] text-2xl w-2/6">
+              <tr className=" text-left pt-10">
+                <td className="px-3 pt-16 pb-6 font-medium text-[#141414] text-2xl w-2/6">
                   Compliance & Customization
                 </td>
               </tr>
 
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
                   Fully PIPEDA-Compliant Data Handling
                 </td>
@@ -894,13 +881,13 @@ export default function PricingTableLarge() {
                 </td>
               </tr>
               {/* Support & Training*/}
-              <tr className=" text-left">
-                <td className="py-2 px-4 pt-6 font-medium text-[#141414] text-2xl w-2/6">
+              <tr className=" text-left pt-10">
+                <td className="px-3 pt-16 pb-6 font-medium text-[#141414] text-2xl w-2/6">
                   Support & Training
                 </td>
               </tr>
 
-              <tr className="text-base text-[#141414] border-b border-b-[#E2E2E2]">
+              <tr className="text-base text-[#141414] border-y border-y-[#E2E2E2]">
                 <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left">
                   Live Chat
                 </td>
@@ -1047,37 +1034,45 @@ export default function PricingTableLarge() {
               <tr className="text-base text-[#141414]">
                 <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left"></td>
                 <td className="p-3 py-4">
-                  <button
-                    onClick={() => router.push("/demo")}
-                    className="mx-auto flex items-center justify-center py-3 px-5 rounded-3xl border border-[#1f1f1f] text-[#1f1f1f] font-medium"
+                  <a
+                    href="https://carehomesupport.netlify.app/signup"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mx-auto flex items-center justify-center py-3 px-5 rounded-3xl border border-[#1f1f1f] w-11/12 text-[#1f1f1f] font-medium"
                   >
-                    Try for free
-                  </button>
+                    Try for Free
+                  </a>
                 </td>
 
                 <td className="p-3 py-4 text-center">
-                  <button
-                    onClick={() => router.push("/demo")}
-                    className="mx-auto flex items-center justify-center py-3 px-5 rounded-3xl border border-[#1f1f1f] text-[#1f1f1f] font-medium"
+                  <a
+                    href="https://carehomesupport.netlify.app/signup"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mx-auto flex items-center justify-center py-3 px-5 rounded-3xl border border-[#1f1f1f] w-11/12 text-[#1f1f1f] font-medium"
                   >
-                    Try for free
-                  </button>
+                    Try for Free
+                  </a>
                 </td>
                 <td className="p-3 py-4 text-center">
-                  <button
-                    onClick={() => router.push("/demo")}
-                    className="mx-auto btn flex items-center justify-center py-3 px-5 rounded-3xl  font-medium"
+                  <a
+                    href="https://carehomesupport.netlify.app/signup"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn flex items-center justify-center cursor-pointer w-11/12 py-4 px-5 mx-auto"
                   >
-                    Request a Demo
-                  </button>
+                    Try for Free
+                  </a>
                 </td>
                 <td className="p-3 py-4 text-center">
-                  <button
-                    onClick={() => router.push("/demo")}
-                    className="mx-auto flex items-center justify-center py-3 px-5 rounded-3xl border border-[#1f1f1f] text-[#1f1f1f] font-medium"
+                  <a
+                    href="https://carehomesupport.netlify.app/signup"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mx-auto flex items-center justify-center py-3 px-5 rounded-3xl border border-[#1f1f1f] w-11/12 text-[#1f1f1f] font-medium"
                   >
-                    Try for free
-                  </button>
+                    Try for Free
+                  </a>
                 </td>
               </tr>
             </tbody>

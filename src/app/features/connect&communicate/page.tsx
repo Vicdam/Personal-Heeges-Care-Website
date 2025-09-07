@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import Footer from "../../components/Footer";
@@ -28,14 +27,18 @@ export default function ClientPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/feature5.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[300px]">
+            <div className="relative h-[160px] w-[700px]">
+              <Image
+                src="/residence-staff.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={160} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Residence Staff Directory
@@ -46,14 +49,19 @@ export default function ClientPage() {
             </p>
           </div>
         </div>
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/feature7.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[300px]">
+            <div className="relative h-[160px] w-[700px]">
+              <Image
+                src="/feature7.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={160} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
+
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Agency Controlled Family Access Portal
@@ -67,14 +75,18 @@ export default function ClientPage() {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8 mt-8 mb-20">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/feature8.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[300px]">
+            <div className="relative h-[160px] w-[700px]">
+              <Image
+                src="/In-App.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={160} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               In-App Notifications

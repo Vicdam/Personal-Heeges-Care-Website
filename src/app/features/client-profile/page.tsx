@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import Footer from "../../components/Footer";
@@ -15,10 +14,10 @@ export default function ClientPage() {
       </div>
       <div className="pb-10 text-start mx-4 md:mx-10">
         <p className="text-sm md:text-base rounded-2xl bg-[#EDFAFF] py-1 mb-4 px-3 inline-block">
-          Client & Care Management
+          Client Profile Management
         </p>
         <h3 className="text-3xl font-medium text-[#101828]">
-          Designed for connected, personalized care
+          Designed for smarter client management
         </h3>
         <p className="mt-4 md:mt-5 text-[#667085] text-xl md:w-[1150px]">
           Centralize client profiles in one secure place, making it simple for
@@ -28,14 +27,16 @@ export default function ClientPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/feature5.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="relative h-[300px] overflow-hidden">
+            <div className="relative h-[120px] w-[700px]">
+              <Image src="/ccp1.png" alt="Image A" width={700} height={120} />
+            </div>
+            <div className="absolute top-18 left-13 h-[120px] w-[600px]">
+              <Image src="/ccp2.png" alt="Image A" width={600} height={120} />
+            </div>
+          </div>
+
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Centralized Client Profile Management
@@ -46,14 +47,19 @@ export default function ClientPage() {
             </p>
           </div>
         </div>
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/feature7.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[300px]">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/status-tracking.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={100} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
+
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Status Tracking (Active, Leave of Absence, Hospitalized)
@@ -66,14 +72,18 @@ export default function ClientPage() {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8 mt-8">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/feature8.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[250px]">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/secure-storage.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={100} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Secure Document Storage
@@ -84,14 +94,18 @@ export default function ClientPage() {
             </p>
           </div>
         </div>
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/feature9.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[250px]">
+            <div className="relative h-[160px] w-[700px]">
+              <Image
+                src="/contact-directory.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={100} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
               Contact Directory
@@ -104,17 +118,21 @@ export default function ClientPage() {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 mx-4 md:mx-10 gap-8 mt-8 mb-20">
-        <div className="col-span-6 bg-[#F6F6F6] rounded-3xl pb-[42px] pt-[30px] px-4 md:px-[30px]">
-          <Image
-            src="/feature9.png"
-            alt="Image A"
-            width={600} // estimate based on col-span
-            height={314} // let height scale automatically
-            className="w-full h-auto contain"
-          />
+        <div className="col-span-6 bg-[#E2EFF5] rounded-3xl pb-[42px] pt-[30px] ps-4 md:ps-[30px]">
+          <div className="overflow-hidden h-[250px]">
+            <div className="relative h-[120px] w-[700px]">
+              <Image
+                src="/Saved-Places.png"
+                alt="Image A"
+                width={700} // estimate based on col-span
+                height={120} // let height scale automatically
+                className="h-auto"
+              />
+            </div>
+          </div>
           <div className="text-start pt-8">
             <h3 className="text-[#101828] text-xl font-medium mb-2">
-              Saved Addresses
+              Saved Places
             </h3>
             <p className="text-[#667085] text-[18px] font-medium">
               Save client addresses to simplify visit planning, transportation,
