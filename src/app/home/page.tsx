@@ -102,7 +102,7 @@ export default function Home() {
       </p>
       <div className="flex flex-col md:flex-row md:items-center md:justify-center mx-4 my-6 md:my-12">
         <a
-          href="https://carehomesupport.netlify.app/signup"
+          href="https://app.heeges.com/signup"
           target="_blank"
           rel="noopener noreferrer"
           className="btn py-[12px] px-[20px] hover:bg-blue-700 w-full md:w-auto mb-2 inline-block text-center"
@@ -349,7 +349,7 @@ export default function Home() {
               make running your agencies smoother and more efficient.
             </p>
             <a
-              href="https://carehomesupport.netlify.app/signup"
+              href="https://app.heeges.com/signup"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center cursor-pointer mt-8 border border-[#fff] rounded-3xl shadow-[0px_1px_2px_0px_rgba(16,24,40,0.05)] h-[40px] w-[96px] font-medium text-white text-sm text-center"

@@ -35,7 +35,7 @@ export default function Footer() {
         </p>
         <div className="flex flex-col md:flex-row md:items-center md:justify-center mx-8 md:mx-0 mt-8 md:mt-[84px] md:mb-[162px] mb-20">
           <a
-            href="https://carehomesupport.netlify.app/signup"
+            href="https://app.heeges.com/signup"
             target="_blank"
             rel="noopener noreferrer"
             className="btn py-[12px] px-[20px] hover:bg-blue-700 w-full md:w-auto mb-2 inline-block text-center"

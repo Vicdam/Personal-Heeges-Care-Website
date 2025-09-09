@@ -178,7 +178,7 @@ export default function PricingCalculator() {
                 </div>
                 {plan.name === "Growth" ? (
                   <a
-                    href="https://carehomesupport.netlify.app/signup"
+                    href="https://app.heeges.com/signup"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn flex items-center justify-center cursor-pointer mt-10 w-11/12 py-4 px-5 mx-auto"
@@ -187,7 +187,7 @@ export default function PricingCalculator() {
                   </a>
                 ) : (
                   <a
-                    href="https://carehomesupport.netlify.app/signup"
+                    href="https://app.heeges.com/signup"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mx-auto mt-[44px] flex items-center justify-center py-3 px-5 rounded-3xl border border-[#1f1f1f] w-11/12 text-[#1f1f1f] font-medium"

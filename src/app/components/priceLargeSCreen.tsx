@@ -1035,7 +1035,7 @@ export default function PricingTableLarge() {
                 <td className="p-3 py-4 font-medium text-[#141414] w-2/6 text-left"></td>
                 <td className="p-3 py-4">
                   <a
-                    href="https://carehomesupport.netlify.app/signup"
+                    href="https://app.heeges.com/signup"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mx-auto flex items-center justify-center py-3 px-5 rounded-3xl border border-[#1f1f1f] w-11/12 text-[#1f1f1f] font-medium"
@@ -1046,7 +1046,7 @@ export default function PricingTableLarge() {
 
                 <td className="p-3 py-4 text-center">
                   <a
-                    href="https://carehomesupport.netlify.app/signup"
+                    href="https://app.heeges.com/signup"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mx-auto flex items-center justify-center py-3 px-5 rounded-3xl border border-[#1f1f1f] w-11/12 text-[#1f1f1f] font-medium"
@@ -1056,7 +1056,7 @@ export default function PricingTableLarge() {
                 </td>
                 <td className="p-3 py-4 text-center">
                   <a
-                    href="https://carehomesupport.netlify.app/signup"
+                    href="https://app.heeges.com/signup"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn flex items-center justify-center cursor-pointer w-11/12 py-4 px-5 mx-auto"
@@ -1066,7 +1066,7 @@ export default function PricingTableLarge() {
                 </td>
                 <td className="p-3 py-4 text-center">
                   <a
-                    href="https://carehomesupport.netlify.app/signup"
+                    href="https://app.heeges.com/signup"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mx-auto flex items-center justify-center py-3 px-5 rounded-3xl border border-[#1f1f1f] w-11/12 text-[#1f1f1f] font-medium"

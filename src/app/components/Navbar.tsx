@@ -258,7 +258,7 @@ export default function Navbar() {
                 })}
               </ul>
               <a
-                href="https://carehomesupport.netlify.app/"
+                href="https://app.heeges.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex justify-between px-4 mt-10 mb-10"
@@ -361,7 +361,7 @@ export default function Navbar() {
               <div className="hidden md:flex items-center gap-4">
                 <div className=" btn-border">
                   <a
-                    href="https://carehomesupport.netlify.app/"
+                    href="https://app.heeges.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className=" rounded-3xl bg-white py-[10px] px-[18px]"
@@ -371,7 +371,7 @@ export default function Navbar() {
                 </div>
 
                 <Link
-                  href="https://carehomesupport.netlify.app/signup"
+                  href="https://app.heeges.com/signup"
                   className="btn py-[10px] px-[18px] hover:bg-blue-700"
                 >
                   Try for Free
